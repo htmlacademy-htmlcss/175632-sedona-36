@@ -93,7 +93,7 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 470px;
+    width: 550px;
 }
 
 .navigation-user {
@@ -199,14 +199,15 @@ body {
 .advantages-item {
     width: 400px;
     height: 385px;
-    color: #ffffff;
-    background-color: #82B3D3;
+    background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-item-town,
 .advantages-item-bridge {
     width: 100%;
     display: flex;
+    background-color: #82B3D3;
+    color: #ffffff;
 }
 
 .advantages-town-img {
@@ -218,15 +219,8 @@ body {
     color: #ffffff;
 }
 
-.advantages-item-square,
-.advantages-item-tourists {
-    background-color: rgba(131, 179, 211, 0.12);
-    color: #333333;
-}
-
 .advantages-item-road {
     background-color: rgba(131, 179, 211, 0.2);
-    color: #333333;
 }
 
 .features-wrapper {
@@ -252,7 +246,7 @@ body {
     background-color: #ffffff;
 }
 
-.find-hotel {
+.find-hotel-wrapper {
     width: 595px;
     margin: 0 auto;
 }
@@ -294,13 +288,13 @@ body {
     width: 1060px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
 }
 
 .footer-social-list {
     list-style: none;
-    width: 190px;
+    width: 250px;
     margin: 0;
+    margin-right: 130px;
     padding: 0;
 }
 
@@ -321,6 +315,10 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     font-style: normal;
+}
+
+.footer-dev-link {
+    margin-left: auto;
 }
 
 /*Catalog*/
@@ -364,9 +362,12 @@ body {
     font-weight: 700;
 }
 
-.hotels-sort-container {
+.catalog-hotels {
     width: 1060px;
-    margin: 0 auto;
+    padding: 50px 70px 60px;
+}
+
+.hotels-sort-container {
     display: flex;
     align-items: center;
 }
@@ -389,8 +390,8 @@ body {
 }
 
 .catalog-hotels-title {
-    width: 358px;
-    margin-right: 180px;
+    width: 378px;
+    margin-right: 160px;
 }
 
 .view-link {
@@ -447,8 +448,7 @@ body {
 .hotel-list {
     list-style: none;
     padding: 0;
-    margin: 0 auto;
-    width: 1060px;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -512,8 +512,7 @@ body {
 .pagination {
     list-style: none;
     padding: 0;
-    margin: 0 auto;
-    width: 1060px;
+    margin: 0;
     display: flex;
     column-gap: 8px;
 }
