@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>Седона - главная страница</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
 <body>
@@ -136,7 +138,8 @@
             бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="subscribe-email">Email</label>
-            <input class="subscribe-email" type="email" name="subscribe-email" id="subscribe-email" placeholder="Ваш e-mail" required>
+            <input class="subscribe-email" type="email" name="subscribe-email" id="subscribe-email"
+              placeholder="Ваш e-mail" required>
             <button class="button button-subscribe" type="submit">Подписаться</button>
           </form>
         </div>
@@ -201,45 +204,54 @@
         <h2 class="modal-title section-title">Поиск гостиницы в Седоне</h2>
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
           <div class="field-date">
-          <label class="search-label">Дата заезда:
-            <input class="search-input search-input-date" type="text" name="date-arrival" value="27 апреля 2020" placeholder="Укажите дату" required>
-          </label>
-          <p class="date-message date-error">Мы не можем отправить вас в прошлое.</p>
-        </div>
-        <div class="field-date">
-          <label class="search-label">Дата выезда:
-            <input class="search-input search-input-date" type="text" name="date-departure" value="1 сентября 2023" placeholder="Укажите дату" required>
-          </label>
-          <p class="date-message">На эти даты есть свободные номера. Пока есть.</p>
-        </div>
-        <div class="field-number"> 
-          <div class="field-number-wrapper">        
-          <label class="search-label label-number-adults" for="adults">Взрослые:</label>
-          <div class="counter-wrapper">
-          <button class="button-counter button-minus" type="button"><span class="visually-hidden">Минимальное число взрослых</span></button>
-          <input class="search-input search-input-number" type="number" name="adults" min="1" id ="adults" value="2" required> 
-          <button class="button-counter button-plus" type="button"><span class="visually-hidden">Максимальное число взрослых</span></button>       
-        </div>
-      </div> 
-      <div class="field-number-wrapper">
-        <span class="search-label search-label-icon">
-          <label class="search-label label-number-children" for="children">Дети:</label>
-          <span class="tooltip">
-            <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-children"></button>
-            <span class="tooltip-text" role="tooltip" id="tooltip-label-children" >Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-          </span>
-        </span>
-        <div class="counter-wrapper">
-          <button class="button-counter button-minus" type="button"><span class="visually-hidden">Минимальное число детей</span></button>
-          <input class="search-input search-input-number" type="number" name="children" min="0" id="children" value="2" required>
-          <button class="button-counter button-plus" type="button"><span class="visually-hidden">Максимальное число детей</span></button>
-        </div>
-      </div>
-        </div>
+            <label class="search-label">Дата заезда:
+              <input class="search-input search-input-date" type="text" name="date-arrival" value="27 апреля 2020"
+                placeholder="Укажите дату" required>
+            </label>
+            <p class="date-message date-error">Мы не можем отправить вас в прошлое.</p>
+          </div>
+          <div class="field-date">
+            <label class="search-label">Дата выезда:
+              <input class="search-input search-input-date" type="text" name="date-departure" value="1 сентября 2023"
+                placeholder="Укажите дату" required>
+            </label>
+            <p class="date-message">На эти даты есть свободные номера. Пока есть.</p>
+          </div>
+          <div class="field-number">
+            <div class="field-number-wrapper">
+              <label class="search-label label-number-adults" for="adults">Взрослые:</label>
+              <div class="counter-wrapper">
+                <button class="button-counter button-minus" type="button"><span class="visually-hidden">Минимальное
+                    число взрослых</span></button>
+                <input class="search-input search-input-number" type="number" name="adults" min="1" id="adults"
+                  value="2" required>
+                <button class="button-counter button-plus" type="button"><span class="visually-hidden">Максимальное
+                    число взрослых</span></button>
+              </div>
+            </div>
+            <div class="field-number-wrapper">
+              <span class="search-label search-label-icon">
+                <label class="search-label label-number-children" for="children">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-children"></button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-children">Укажите количество детей,
+                    которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+              </span>
+              <div class="counter-wrapper">
+                <button class="button-counter button-minus" type="button"><span class="visually-hidden">Минимальное
+                    число детей</span></button>
+                <input class="search-input search-input-number" type="number" name="children" min="0" id="children"
+                  value="2" required>
+                <button class="button-counter button-plus" type="button"><span class="visually-hidden">Максимальное
+                    число детей</span></button>
+              </div>
+            </div>
+          </div>
           <button class="button button-search" type="submit">Найти</button>
         </form>
       </section>
-    </div>    
+    </div>
   </div>
 </body>
 
